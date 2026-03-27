@@ -446,12 +446,14 @@ install_swap()
 install_location_56()
 {
 	Info "${YELLOW}Мастер установки локации для HPL 5.6"
-	echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
-	echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
-	echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-	echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-	echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
-	echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+	#---------------------------------------------------------------------------
+	echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list
+	echo "deb-src http://deb.debian.org/debian bullseye main contrib non-free" >> /etc/apt/sources.list
+	echo "deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+	echo "deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+	echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+	echo "deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+	#---------------------------------------------------------------------------
 	if [ $? -eq 0 ]; then
 		echo "${white}• Добавление ${green}репозиторий ${white}• ${green}[OK]"
 		tput sgr0
@@ -537,7 +539,7 @@ install_location_56()
 	mkdir -p /var/nginx > /dev/null 2>&1
 	rm /etc/nginx/nginx.conf > /dev/null 2>&1
 	cd /etc/nginx > /dev/null 2>&1
-	wget http://resource.hackchik.ru/multytools/hostinpl/5.6/ngixn.conf > /dev/null 2>&1
+	wget http://arzquest.ru/autoinstaller/multytools/hostinpl/5.6/ngixn.conf > /dev/null 2>&1
 	service nginx restart > /dev/null 2>&1
 	service apache2 start
 	if [ $? -eq 0 ]; then
@@ -606,7 +608,7 @@ install_location_56()
 		tput sgr0
 		exit
 	fi
-	apt-get install -y apt-transport-https ca-certificates > /dev/null 2>&1
+	apt-get install -y apt-transport-https ca-certificates curl software-properties-common > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		echo "${white}• Установка ${green}Docker'a ${white}• ${green}[1/5]"
 		tput sgr0
@@ -615,7 +617,10 @@ install_location_56()
 		tput sgr0
 		exit
 	fi
-	curl -fsSL "https://download.docker.com/linux/debian/gpg" | apt-key add > /dev/null 2>&1
+	#---------------------------------------------------------------------------
+	# curl -fsSL "https://download.docker.com/linux/debian/gpg" | apt-key add > /dev/null 2>&1
+	# Спрашивает y/n
+	curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 	if [ $? -eq 0 ]; then
 		echo "${white}• Установка ${green}Docker'a ${white}• ${green}[2/5]"
 		tput sgr0
@@ -624,7 +629,9 @@ install_location_56()
 		tput sgr0
 		exit
 	fi
-	echo "deb [arch=amd64] https://download.docker.com/linux/debian stretch stable" > /etc/apt/sources.list.d/docker.list
+	#---------------------------------------------------------------------------
+	# echo "deb [arch=amd64] https://download.docker.com/linux/debian bullseye stable" > /etc/apt/sources.list.d/docker.list
+	echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 	if [ $? -eq 0 ]; then
 		echo "${white}• Установка ${green}Docker'a ${white}• ${green}[3/5]"
 		tput sgr0
@@ -651,8 +658,8 @@ install_location_56()
 		tput sgr0
 		exit
 	fi
-	wget https://resource.hackchik.ru/multytools/hostinpl/5.6/Dockerfile > /dev/null 2>&1
-	docker build -t debian:stretch . > /dev/null 2>&1
+	wget https://arzquest.ru/autoinstaller/multytools/hostinpl/5.6/Dockerfile > /dev/null 2>&1
+	docker build -t debian:bullseye . > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		echo "${white}• Настройка ${green}Docker'a ${white}• ${green}[OK]"
 		tput sgr0
@@ -695,12 +702,14 @@ install_location_56()
 install_location_55pro()
 {
 	Info "${YELLOW}Мастер установки локации для HPL 5.5PRO"
-	echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
-	echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
-	echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-	echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-	echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
-	echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+	#---------------------------------------------------------------------------
+	echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list
+	echo "deb-src http://deb.debian.org/debian bullseye main contrib non-free" >> /etc/apt/sources.list
+	echo "deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+	echo "deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+	echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+	echo "deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+	#---------------------------------------------------------------------------
 	if [ $? -eq 0 ]; then
 		echo "${white}• Добавление ${green}репозиторий ${white}• ${green}[OK]"
 		tput sgr0
@@ -839,7 +848,7 @@ install_location_55pro()
 		tput sgr0
 		exit
 	fi
-	apt-get install -y apt-transport-https ca-certificates > /dev/null 2>&1
+	apt-get install -y apt-transport-https ca-certificates curl software-properties-common > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		echo "${white}• Установка ${green}Docker'a ${white}• ${green}[1/5]"
 		tput sgr0
@@ -848,7 +857,8 @@ install_location_55pro()
 		tput sgr0
 		exit
 	fi
-	curl -fsSL "https://download.docker.com/linux/debian/gpg" | apt-key add > /dev/null 2>&1
+	# curl -fsSL "https://download.docker.com/linux/debian/gpg" | apt-key add > /dev/null 2>&1
+	curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 	if [ $? -eq 0 ]; then
 		echo "${white}• Установка ${green}Docker'a ${white}• ${green}[2/5]"
 		tput sgr0
@@ -857,7 +867,8 @@ install_location_55pro()
 		tput sgr0
 		exit
 	fi
-	echo "deb [arch=amd64] https://download.docker.com/linux/debian stretch stable" > /etc/apt/sources.list.d/docker.list
+	# echo "deb [arch=amd64] https://download.docker.com/linux/debian bullseye stable" > /etc/apt/sources.list.d/docker.list
+	echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 	if [ $? -eq 0 ]; then
 		echo "${white}• Установка ${green}Docker'a ${white}• ${green}[3/5]"
 		tput sgr0
@@ -884,13 +895,13 @@ install_location_55pro()
 		tput sgr0
 		exit
 	fi
-	wget https://resource.hackchik.ru/multytools/hostinpl/5.6/Dockerfile > /dev/null 2>&1
-	docker build -t debian:stretch . > /dev/null 2>&1
+	wget https://arzquest.ru/autoinstaller/multytools/hostinpl/5.6/Dockerfile > /dev/null 2>&1
+	docker build -t debian:bullseye . > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
-		echo "${white}• Настройка ${green}Doker'a ${white}• ${green}[OK]"
+		echo "${white}• Настройка ${green}Docker'a ${white}• ${green}[OK]"
 		tput sgr0
 	else
-		echo "${white}• Настройка ${green}Doker'a ${white}• ${red}[fail]"
+		echo "${white}• Настройка ${green}Docker'a ${white}• ${red}[fail]"
 		tput sgr0
 		exit
 	fi
@@ -920,12 +931,14 @@ hostinpl_55pro()
 	read -p "${white}Введите reCaptchav2(секретный ключ) - (получить тут: clck.ru/9aEgx):${reset}" SEKRET_RAPT
 	read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 	if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
-		echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
-		echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
-		echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
-		echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+		#-----------------------------------------------------------------------
+		echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian bullseye main contrib non-free" >> /etc/apt/sources.list
+		echo "deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+		echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+		#-----------------------------------------------------------------------
 		if [ $? -eq 0 ]; then
 			echo "${white}• Добавление ${green}репозиторий ${white}• ${green}[OK]"
 			tput sgr0
@@ -1097,12 +1110,14 @@ hostinpl_56()
 	read -p "${white}Введите reCaptchav2(секретный ключ) - (получить тут: clck.ru/9aEgx):${reset}" SEKRET_RAPT
 	read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 	if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
-		echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
-		echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
-		echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
-		echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+		#-----------------------------------------------------------------------
+		echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian bullseye main contrib non-free" >> /etc/apt/sources.list
+		echo "deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+		echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+		#-----------------------------------------------------------------------
 		if [ $? -eq 0 ]; then
 			echo "${white}• Добавление ${green}репозиторий ${white}• ${green}[OK]"
 			tput sgr0
@@ -1517,12 +1532,14 @@ hostinpl_54_test()
 	read -p "${white}Введите reCaptchav2(секретный ключ) - (получить тут: clck.ru/9aEgx):${reset}" SEKRET_RAPT
 	read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 	if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
-		echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
-		echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
-		echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
-		echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+		#-----------------------------------------------------------------------
+		echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian bullseye main contrib non-free" >> /etc/apt/sources.list
+		echo "deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+		echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+		#-----------------------------------------------------------------------
 		if [ $? -eq 0 ]; then
 			echo "${white}• Добавление ${green}репозиторий ${white}• ${green}[OK]"
 			tput sgr0
@@ -4046,12 +4063,14 @@ phpversion()
 	wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg > /dev/null 2>&1
 	curl -fsSL https://packages.sury.org/php/apt.gpg | apt-key add > /dev/null 2>&1
 	echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
-	echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
-	echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
-	echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-	echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-	echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
-	echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+	#---------------------------------------------------------------------------
+	echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list
+	echo "deb-src http://deb.debian.org/debian bullseye main contrib non-free" >> /etc/apt/sources.list
+	echo "deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+	echo "deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+	echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+	echo "deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+	#---------------------------------------------------------------------------
 	sudo apt update > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		echo "${white}• Добавление ${green}репозиторий ${white}• ${green}[OK]"
@@ -4200,14 +4219,6 @@ if [ $VER = "Debian11" ]; then
 	   webservermenu
 	else
 		Info "${YELLOW}Мастер настройки Web Servera"
-		#-----------------------------------------------------------------------
-		# Debian 9
-		# echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
-		# echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
-		# echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		# echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		# echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
-		# echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
 		#-----------------------------------------------------------------------
 		# Debian 11
 		echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list
@@ -4790,12 +4801,14 @@ virginiaproject()
 		read -p "${white}Введите ваш НИК (например Jack_Sweech):${reset}" NICKNAME
 		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
-			echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
-			echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
-			echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-			echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-			echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
-			echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+			#-------------------------------------------------------------------
+			echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list
+			echo "deb-src http://deb.debian.org/debian bullseye main contrib non-free" >> /etc/apt/sources.list
+			echo "deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+			echo "deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+			echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+			echo "deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+			#-------------------------------------------------------------------
 			if [ $? -eq 0 ]; then
 				echo "${white}• Добавление ${green}репозиторий ${white}• ${green}[OK]"
 				tput sgr0

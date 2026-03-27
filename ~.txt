@@ -6,8 +6,9 @@ bash <(wget -qO- https://resource.hackchik.ru/install)
 wget https://arzquest.ru/autoinstaller/install.sh -O install.sh 2> /dev/null && chmod 777 install.sh && ./install.sh
 //------------------------------------------------------------------------------
 // Мои сервера:
-45.95.203.205	arzrose.ru	fPecBrMcw1cj
-185.233.200.143	arzquest.ru	ubi6170426jZ
+45.95.203.205	arzrose.ru		fPecBrMcw1cj
+185.233.200.143	arzquest.ru		ubi6170426jZ
+104.128.136.38	arzfreecity.ru	3#BAA(j?GsKVW[&}
 //------------------------------------------------------------------------------
 // Подгатовка сервера:
 apt-get update
@@ -16,8 +17,8 @@ clear
 apt-get autoremove
 reboot
 //------------------------------------------------------------------------------
-// Создание сайтов:
-	sed -i -e 's/\r$//' install.sh -- Если ошибка "/bin/bash^M:"
+//   С О З Д А Н И Е   С А Й Т О В   ///////////////////////////////////////////
+//------------------------------------------------------------------------------
 wget https://arzquest.ru/autoinstaller/install.sh -O install.sh 2> /dev/null && chmod 777 install.sh && ./install.sh
 //------------------------------------------------------------------------------
 // 1 - Настроить VDS/VPS под WEB Server(для установки сайтов)
@@ -31,23 +32,27 @@ dev.arzrose.ru
 forum.arzrose.ru
 gta.arzrose.ru
 logs.arzrose.ru
-//------------------------------------------------------------------------------
+panel.arzrose.ru
 
+Ссылка на PHPMyAdmin : https://arzrose.ru/phpmyadmin
+Данные от PHPMyAdmin : логин: admin ; пароль: 1UXFA2SOgdQE5boS
 //------------------------------------------------------------------------------
 // Настройка SSL:
 // https://certbot.eff.org/
-1. Install snapd:
+// 1. Install snapd:
 apt update
 apt upgrade
 apt install snapd
 
 snap install core
-2. Install Certbot:
+
+// 2. Install Certbot:
 snap install --classic certbot
 ln -s /snap/bin/certbot /usr/bin/certbot
 
-3. Установка сертификатов:
+// 3. Установка сертификатов:
 certbot --apache
+
 //------------------------------------------------------------------------------
 // Настройка mysql
 // Отключение: при регистрации не нужны значения по умолчанию
@@ -67,14 +72,43 @@ sql_mode=NO_ENGINE_SUBSTITUTION
 После перезапуска сервера a SHOW VARIABLES LIKE 'sql_mode'; выдал мне:-
 Наконец-то, строгого режима нет!
 //------------------------------------------------------------------------------
-// Обновление install.sh для Debian 11
+
+//------------------------------------------------------------------------------
+//   У С Т А Н О В К А   П А Н Е Л И   У П Р А В Л Е Н И Я   ///////////////////
+//------------------------------------------------------------------------------
+sudo apt install htop
+// 1. Настроить VDS/VPS под Samp/Minecraft (для установки серверов)
+// 2. Подключить файл подкачки
+// 3. Настроить веб-часть: (+указать таблицу mysql "hostin")
+	ARZRose
+	clck.ru/9aEgx -> https://www.google.com/recaptcha/admin/site/709812745
+	panel.arzrose.ru
+	Ключ сайта: 6LcTD04pAAAAAPBkG2e4AFaPWeNv46jlSyoYmH8z
+	Секретный ключ: 6LcTD04pAAAAAGHH_5py8BFpLFmVy7EgSkQcxo15
+	- Добавить рубли пользователю "user_balance"
+	- 
+
+// 4. Настроить игровую локацию
+
+//------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------
+
+
+//------------------------------------------------------------------------------
+//   О Б Н О В Л Е Н И Е   У С Т А Н О В Щ И К А   /////////////////////////////
+//------------------------------------------------------------------------------
+// Обновление WEB части install.sh для Debian 11
 Debian9 -> Debian11
 7.0 -> 7.4
+stretch -> bullseye
+
 site.conf -> apache2 кроме web56.zip
 127.4.0.1 -> 127.0.0.1
 gs1 -> admin
 forum.sql -> base.sql
 -uadmin -> -u admin
+//------------------------------------------------------------------------------
 // Обновление репозиториев
 # nano /etc/apt/sources.list
 
@@ -86,12 +120,14 @@ echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >
 echo "deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
 
 # apt-get update
-
+//------------------------------------------------------------------------------
 // Непонятно
 # apt-get install -y default-jdk (после добавления всех репозиторий)
 webserverall() - отключить репозиторий
 hostinpl_56() - отключить репозиторий URL_web56
 install_location_56() - отключить репозиторий URL_cp56
 # wget https://resource.hackchik.ru/multytools/hostinpl/5.6/Dockerfile - отключить
+
+//------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
