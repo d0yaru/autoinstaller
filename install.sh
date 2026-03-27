@@ -65,32 +65,32 @@ Debian_9="1"
 #virginia_project
 STATUS_virginiaproject="1"
 #servermenu by hackchik
-URL_VirginiaRP="https://resource.hackchik.ru/multytools/server/samp/VirginiaRP.zip" STATUS_server_virginia="1"
-URL_ArizonaRP="https://resource.hackchik.ru/multytools/server/samp/ArizonaRP.zip" STATUS_server_florence="1"
-URL_AbsoluteRP="https://resource.hackchik.ru/multytools/server/samp/AbsoluteRP.zip" STATUS_server_absolute="1"
-URL_RadmirRP="https://resource.hackchik.ru/multytools/server/crmp/RadmirRP.zip" STATUS_server_absolute="1"
+URL_VirginiaRP="https://arzquest.ru/autoinstaller/multytools/server/samp/VirginiaRP.zip" STATUS_server_virginia="1"
+URL_ArizonaRP="https://arzquest.ru/autoinstaller/multytools/server/samp/ArizonaRP.zip" STATUS_server_florence="1"
+URL_AbsoluteRP="https://arzquest.ru/autoinstaller/multytools/server/samp/AbsoluteRP.zip" STATUS_server_absolute="1"
+URL_RadmirRP="https://arzquest.ru/autoinstaller/multytools/server/crmp/RadmirRP.zip" STATUS_server_absolute="1"
 
 #sitemenu by hackchik
-URL_VirginiaUCP="https://resource.hackchik.ru/multytools/site/VirginiaUCP.zip" STATUS_site_virginia="1"
-URL_ArizonaUCP="https://resource.hackchik.ru/multytools/site/ArizonaUCP.zip" STATUS_site_arizona="1"
-URL_EmpireUCP="https://resource.hackchik.ru/multytools/site/EmpireUCP.zip" STATUS_site_empire="1"
-URL_LuxeUCP="https://resource.hackchik.ru/multytools/site/LuxeUCP.zip" STATUS_site_luxe="1"
-URL_GrandUCP="https://resource.hackchik.ru/multytools/site/GrandUCP.zip" STATUS_site_grand="1"
-URL_CanberraUCP="https://resource.hackchik.ru/multytools/site/CanberraUCP.zip" STATUS_site_canberra="1"
-URL_EnergySite="https://resource.hackchik.ru/multytools/site/EnergySite.zip" STATUS_site_energy="1"
-URL_AndreasUCP="https://resource.hackchik.ru/multytools/site/AndreasUCP.zip" STATUS_site_andreas="1"
-URL_Aurora="https://resource.hackchik.ru/multytools/site/Aurora.zip" STATUS_site_aurora="1"
-URL_LOGI="https://resource.hackchik.ru/multytools/site/UnionLogs.zip" STATUS_site_unionlogs="1"
-URL_FORUM="https://resource.hackchik.ru/multytools/site/ForumIODark.zip" STATUS_site_iodarkforum="1"
+URL_VirginiaUCP="https://arzquest.ru/autoinstaller/multytools/site/VirginiaUCP.zip" STATUS_site_virginia="1"
+URL_ArizonaUCP="https://arzquest.ru/autoinstaller/multytools/site/ArizonaUCP.zip" STATUS_site_arizona="1"
+URL_EmpireUCP="https://arzquest.ru/autoinstaller/multytools/site/EmpireUCP.zip" STATUS_site_empire="1"
+URL_LuxeUCP="https://arzquest.ru/autoinstaller/multytools/site/LuxeUCP.zip" STATUS_site_luxe="1"
+URL_GrandUCP="https://arzquest.ru/autoinstaller/multytools/site/GrandUCP.zip" STATUS_site_grand="1"
+URL_CanberraUCP="https://arzquest.ru/autoinstaller/multytools/site/CanberraUCP.zip" STATUS_site_canberra="1"
+URL_EnergySite="https://arzquest.ru/autoinstaller/multytools/site/EnergySite.zip" STATUS_site_energy="1"
+URL_AndreasUCP="https://arzquest.ru/autoinstaller/multytools/site/AndreasUCP.zip" STATUS_site_andreas="1"
+URL_Aurora="https://arzquest.ru/autoinstaller/multytools/site/Aurora.zip" STATUS_site_aurora="1"
+URL_LOGI="https://arzquest.ru/autoinstaller/multytools/site/UnionLogs.zip" STATUS_site_unionlogs="1"
+URL_FORUM="https://arzquest.ru/autoinstaller/multytools/site/ForumIODark.zip" STATUS_site_iodarkforum="1"
 
 #hostinmenu by hackchik
-URL_web54="http://resource.hackchik.ru/multytools/hostinpl/5.4/web54.zip" STATUS_hostinpl_54menu="0"
-URL_web55="http://resource.hackchik.ru/multytools/hostinpl/5.5/web55.zip" STATUS_hostinpl_55menu="0"
-URL_cp="http://resource.hackchik.ru/multytools/hostinpl/cp.zip"
-URL_web55pro="https://resource.hackchik.ru/multytools/hostinpl/5.5pro/web55pro.zip" STATUS_hostinpl_55promenu="1"
-URL_cp55pro="http://resource.hackchik.ru/multytools/hostinpl/5.5pro/cp55pro.zip"
-URL_web56="https://resource.hackchik.ru/multytools/hostinpl/5.6/web56.zip" STATUS_hostinpl_56menu="1"
-URL_cp56="http://resource.hackchik.ru/multytools/hostinpl/5.6/cp56.zip"
+URL_web54="http://arzquest.ru/autoinstaller/multytools/hostinpl/5.4/web54.zip" STATUS_hostinpl_54menu="0"
+URL_web55="http://arzquest.ru/autoinstaller/multytools/hostinpl/5.5/web55.zip" STATUS_hostinpl_55menu="0"
+URL_cp="http://arzquest.ru/autoinstaller/multytools/hostinpl/cp.zip"
+URL_web55pro="https://arzquest.ru/autoinstaller/multytools/hostinpl/5.5pro/web55pro.zip" STATUS_hostinpl_55promenu="1"
+URL_cp55pro="http://arzquest.ru/autoinstaller/multytools/hostinpl/5.5pro/cp55pro.zip"
+URL_web56="https://arzquest.ru/autoinstaller/multytools/hostinpl/5.6/web56.zip" STATUS_hostinpl_56menu="1"
+URL_cp56="http://arzquest.ru/autoinstaller/multytools/hostinpl/5.6/cp56.zip"
 
 hostinmenu()
 {
@@ -470,15 +470,15 @@ install_location_56()
 		tput sgr0
 		exit
 	fi
-	apt-get install -y curl pwgen unzip openssh-server apache2 php7.0 mariadb-server gnupg > /dev/null 2>&1
+	apt-get install -y curl pwgen unzip openssh-server apache2 php7.4 mariadb-server gnupg > /dev/null 2>&1
 	MYPASS=$(pwgen -cns -1 16) > /dev/null 2>&1
 	mysql -e "GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY '$MYPASS' WITH GRANT OPTION" > /dev/null 2>&1
 	mysql -e "FLUSH PRIVILEGES" > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,curl,mariadb-server ${white}• ${green}[OK]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,curl,mariadb-server ${white}• ${green}[OK]"
 			tput sgr0
 		else
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,curl,mariadb-server ${white}• ${red}[fail]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,curl,mariadb-server ${white}• ${red}[fail]"
 			tput sgr0
 			exit
 	fi
@@ -517,9 +517,9 @@ install_location_56()
 	a2dissite 000-default > /dev/null 2>&1
 	a2enmod rewrite > /dev/null 2>&1
 	echo "Europe/Moscow" > /etc/timezone > /dev/null 2>&1
-	sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
-	sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
-	sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
+	sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
+	sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
+	sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
 	sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf > /dev/null 2>&1
 	sed -i 's/#max_connections        = 100/max_connections        = 1000/g' /etc/mysql/mariadb.conf.d/50-server.cnf > /dev/null 2>&1
 	systemctl restart apache2 > /dev/null 2>&1
@@ -719,15 +719,15 @@ install_location_55pro()
 		tput sgr0
 		exit
 	fi
-	apt-get install -y curl pwgen sudo unzip openssh-server apache2 php7.0 mariadb-server > /dev/null 2>&1
+	apt-get install -y curl pwgen sudo unzip openssh-server apache2 php7.4 mariadb-server > /dev/null 2>&1
 	MYPASS=$(pwgen -cns -1 16) > /dev/null 2>&1
 	mysql -e "GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY '$MYPASS' WITH GRANT OPTION" > /dev/null 2>&1
 	mysql -e "FLUSH PRIVILEGES" > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,curl,mariadb-server ${white}• ${green}[OK]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,curl,mariadb-server ${white}• ${green}[OK]"
 			tput sgr0
 		else
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,curl,mariadb-server ${white}• ${red}[fail]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,curl,mariadb-server ${white}• ${red}[fail]"
 			tput sgr0
 			exit
 	fi
@@ -766,9 +766,9 @@ install_location_55pro()
 	a2dissite 000-default > /dev/null 2>&1
 	a2enmod rewrite > /dev/null 2>&1
 	echo "Europe/Moscow" > /etc/timezone > /dev/null 2>&1
-	sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
-	sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
-	sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
+	sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
+	sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
+	sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
 	sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf > /dev/null 2>&1
 	sed -i 's/#max_connections        = 100/max_connections        = 1000/g' /etc/mysql/mariadb.conf.d/50-server.cnf > /dev/null 2>&1
 	systemctl restart apache2 > /dev/null 2>&1
@@ -943,13 +943,13 @@ hostinpl_55pro()
 			tput sgr0
 			exit
 		fi
-		apt install -y pwgen apache2 php7.0 php7.0-gd php7.0-mysql php7.0-ssh2 mariadb-server unzip > /dev/null 2>&1
+		apt install -y pwgen apache2 php7.4 php7.4-gd php7.4-mysql php7.4-ssh2 mariadb-server unzip > /dev/null 2>&1
 		CRONTOKE=$(pwgen -cns -1 14) > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,mariadb-server ${white}• ${green}[OK]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,mariadb-server ${white}• ${green}[OK]"
 			tput sgr0
 		else
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,mariadb-server ${white}• ${red}[fail]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,mariadb-server ${white}• ${red}[fail]"
 			tput sgr0
 			exit
 		fi
@@ -976,7 +976,7 @@ hostinpl_55pro()
 			exit
 		fi
 		rm web55pro.zip > /dev/null 2>&1
-		mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+		mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
 			echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 			tput sgr0
@@ -1038,7 +1038,7 @@ hostinpl_55pro()
 			tput sgr0
 			exit
 		fi
-		mysql -uadmin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
+		mysql -u admin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
 		mkdir /var/lib/mysql/hostin > /dev/null 2>&1
 		chown -R mysql:mysql /var/lib/mysql/hostin > /dev/null 2>&1
 		cd / > /dev/null 2>&1
@@ -1120,13 +1120,13 @@ hostinpl_56()
 			tput sgr0
 			exit
 		fi
-		apt install -y pwgen apache2 php7.0 php7.0-gd php7.0-mysql php7.0-ssh2 mariadb-server unzip > /dev/null 2>&1
+		apt install -y pwgen apache2 php7.4 php7.4-gd php7.4-mysql php7.4-ssh2 mariadb-server unzip > /dev/null 2>&1
 		CRONTOKE=$(pwgen -cns -1 14) > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,mariadb-server ${white}• ${green}[OK]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,mariadb-server ${white}• ${green}[OK]"
 			tput sgr0
 		else
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,mariadb-server ${white}• ${red}[fail]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,mariadb-server ${white}• ${red}[fail]"
 			tput sgr0
 			exit
 		fi
@@ -1215,7 +1215,7 @@ hostinpl_56()
 			tput sgr0
 			exit
 		fi
-		mysql -uadmin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
+		mysql -u admin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
 		mkdir /var/lib/mysql/hostin > /dev/null 2>&1
 		chown -R mysql:mysql /var/lib/mysql/hostin > /dev/null 2>&1
 		cd / > /dev/null 2>&1
@@ -1409,7 +1409,7 @@ hostinpl_55()
 			exit
 		fi
 		rm web55.zip > /dev/null 2>&1
-		mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+		mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
 			echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 			tput sgr0
@@ -1445,7 +1445,7 @@ hostinpl_55()
 		sed -i "s/SiteName/${NAME}/g" /var/www/${DOMAIN}/application/config.php > /dev/null 2>&1
 		chmod -R 755 /var/www/${DOMAIN}/
 		cd
-		mysql -uadmin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
+		mysql -u admin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
 		mkdir /var/lib/mysql/hostin > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
 			echo "• Создание папки ${green}/var/lib/mysql/hostin! • ${green}[OK]"
@@ -1540,12 +1540,12 @@ hostinpl_54_test()
 			tput sgr0
 			exit
 		fi
-		apt install -y php7.0-ssh2 unzip > /dev/null 2>&1
+		apt install -y php7.4-ssh2 unzip > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
-			echo "${white}• Установка пакетов ${green}php7.0-ssh2,unzip ${white}• ${green}[OK]"
+			echo "${white}• Установка пакетов ${green}php7.4-ssh2,unzip ${white}• ${green}[OK]"
 			tput sgr0
 		else
-			echo "${white}• Установка пакетов ${green}php7.0-ssh2,unzip ${white}• ${red}[fail]"
+			echo "${white}• Установка пакетов ${green}php7.4-ssh2,unzip ${white}• ${red}[fail]"
 			tput sgr0
 			exit
 		fi
@@ -1572,7 +1572,7 @@ hostinpl_54_test()
 			exit
 		fi
 		rm web54.zip > /dev/null 2>&1
-		mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+		mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
 			echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 			tput sgr0
@@ -1632,7 +1632,7 @@ hostinpl_54_test()
 			tput sgr0
 			exit
 		fi
-		mysql -uadmin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
+		mysql -u admin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
 		mkdir /var/lib/mysql/hostin > /dev/null 2>&1
 		chown -R mysql:mysql /var/lib/mysql/hostin > /dev/null 2>&1
 		cd / > /dev/null 2>&1
@@ -1695,12 +1695,12 @@ hostinpl_54()
 			tput sgr0
 			exit
 		fi
-		apt-get install -y dialog php7.0-ssh2 > /dev/null 2>&1
+		apt-get install -y dialog php7.4-ssh2 > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
-			echo "• Установка пакета ${green}dialog, php7.0-ssh2 • ${green}[OK]"
+			echo "• Установка пакета ${green}dialog, php7.4-ssh2 • ${green}[OK]"
 			tput sgr0
 		else
-			echo "• Установка пакета ${green}dialog, php7.0-ssh2 • ${red}[fail]"
+			echo "• Установка пакета ${green}dialog, php7.4-ssh2 • ${red}[fail]"
 			tput sgr0
 			exit
 		fi
@@ -1794,7 +1794,7 @@ hostinpl_54()
 			exit
 		fi
 		rm web54.zip > /dev/null 2>&1
-		mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+		mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
 			echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 			tput sgr0
@@ -1830,7 +1830,7 @@ hostinpl_54()
 		sed -i "s/SiteName/${NAME}/g" /var/www/${DOMAIN}/application/config.php > /dev/null 2>&1
 		chmod -R 755 /var/www/${DOMAIN}/
 		cd
-		mysql -uadmin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
+		mysql -u admin -p$MYPASS -D hostin -e "DROP DATABASE hostin" > /dev/null 2>&1
 		mkdir /var/lib/mysql/hostin > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
 			echo "• Создание папки ${green}/var/lib/mysql/hostin! • ${green}[OK]"
@@ -1938,7 +1938,7 @@ backup_allsql()
 	read -p "${white}Введите пароль от базы данных:" MYPASS
 	mkdir -p /backup/mysql > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
-		mysqldump -uadmin -p$MYPASS --all-databases > /backup/mysql/$filename 2> /dev/null
+		mysqldump -u admin -p$MYPASS --all-databases > /backup/mysql/$filename 2> /dev/null
 		echo "• Создание ${green}дампа! • ${green}[OK]"
 		echo "${white}• База сохранена в ${CYAN}/backup/mysql/${filename}"
 		tput sgr0
@@ -1954,7 +1954,7 @@ backup_onesql()
 	read -p "${white}Введите пароль от базы данных:" MYPASS
 	mkdir -p /backup/mysql/ > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
-		mysqldump -uadmin -p$MYPASS $DATABASE > /backup/mysql/$filename 2> /dev/null
+		mysqldump -u admin -p$MYPASS $DATABASE > /backup/mysql/$filename 2> /dev/null
 		echo "• Создание ${green}дампа! • ${green}[OK]"
 		echo "${white}• База сохранена в ${CYAN}/backup/mysql/${filename}"
 		tput sgr0
@@ -1983,7 +1983,7 @@ sitemenu()
 	Info "- ${YELLOW}0${green} - ${white}Вернуться в меню"
 	cp_s
 	Info
-	read -p "${white}ѕожалуйста, введите пункт меню:" case
+	read -p "${white}Пожалуйста, введите пункт меню:" case
 	case $case in
 		1) site_virginia;;
 		2) site_arizona;;
@@ -2004,7 +2004,7 @@ site_aurora()
 	if [ "$STATUS_site_aurora" = "1" ]; then
 		Info "${YELLOW}Мастер установки сайта ${RED}Aurora"
 		read -p "${white}Укажите ваш домен(пример: virginia-rp.ru ; logs.virginia-rp.ru):${reset}" DOMAIN
-		read -p "${YELLOW}ѕроверьте правильность данных! ${white}ѕродолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
+		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
 			apt-get update > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
@@ -2054,7 +2054,7 @@ site_aurora()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -2122,7 +2122,7 @@ site_andreas()
 		read -p "${white}Укажите ваш домен(пример: virginia-rp.ru ; logs.virginia-rp.ru):${reset}" DOMAIN
 		read -p "${white}Укажите название базы данных:${reset}" DATABASE
 		read -p "${white}Укажите пароль от базы данных:${reset}" MYPASS
-		read -p "${YELLOW}ѕроверьте правильность данных! ${white}ѕродолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
+		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
 			apt-get update > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
@@ -2172,7 +2172,7 @@ site_andreas()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -2213,11 +2213,11 @@ site_andreas()
 				tput sgr0
 				exit
 			fi
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE admin" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE bansite" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE logienter" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE news" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE raiting" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE admin" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE bansite" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE logienter" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE news" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE raiting" > /dev/null 2>&1
 			mysql -u admin -p$MYPASS $DATABASE < /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Установка базы ${white}• ${green}[OK]"
@@ -2274,7 +2274,7 @@ site_canberra()
 		read -p "${white}Укажите ваш домен(пример: virginia-rp.ru ; logs.virginia-rp.ru):${reset}" DOMAIN
 		read -p "${white}Укажите название базы данных:${reset}" DATABASE
 		read -p "${white}Укажите пароль от базы данных:${reset}" MYPASS
-		read -p "${YELLOW}ѕроверьте правильность данных! ${white}ѕродолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
+		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
 			apt-get update > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
@@ -2316,7 +2316,7 @@ site_canberra()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -2357,8 +2357,8 @@ site_canberra()
 				tput sgr0
 				exit
 			fi
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE news" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE freekassa_payments" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE news" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE freekassa_payments" > /dev/null 2>&1
 			mysql -u admin -p$MYPASS $DATABASE < /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Установка базы ${white}• ${green}[OK]"
@@ -2416,7 +2416,7 @@ site_grand()
 		read -p "${white}Укажите ваш домен(пример: virginia-rp.ru ; logs.virginia-rp.ru):${reset}" DOMAIN
 		read -p "${white}Укажите название базы данных:${reset}" DATABASE
 		read -p "${white}Укажите пароль от базы данных:${reset}" MYPASS
-		read -p "${YELLOW}ѕроверьте правильность данных! ${white}ѕродолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
+		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
 			apt-get update > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
@@ -2457,7 +2457,7 @@ site_grand()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -2498,7 +2498,7 @@ site_grand()
 				tput sgr0
 				exit
 			fi
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE session" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE session" > /dev/null 2>&1
 			mysql -u admin -p$MYPASS $DATABASE < /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Установка базы ${white}• ${green}[OK]"
@@ -2560,7 +2560,7 @@ site_luxe()
 		read -p "${white}Укажите название проекта(пример: Virginia Role Play):${reset}" NAMEPROJECT
 		read -p "${white}Укажите ID группы В онтакте(пример: club67908356 или winchikplay):${reset}" VK_GROUP
 		read -p "${white}Укажите IP сервера(пример: 185.139.70.154:7777):${reset}" IP_SERVER
-		read -p "${YELLOW}ѕроверьте правильность данных! ${white}ѕродолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
+		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
 				apt-get update > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
@@ -2602,7 +2602,7 @@ site_luxe()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -2643,7 +2643,7 @@ site_luxe()
 				tput sgr0
 				exit
 			fi
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE session" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE session" > /dev/null 2>&1
 			mysql -u admin -p$MYPASS $DATABASE < /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Установка базы ${white}• ${green}[OK]"
@@ -2714,7 +2714,7 @@ site_energy()
 		read -p "${white}Укажите название проекта(пример: Virginia Role Play):${reset}" NAMEPROJECT
 		read -p "${white}Укажите ID группы В онтакте(пример: club67908356 или winchikplay):${reset}" VK_GROUP
 		read -p "${white}Укажите IP сервера(пример: 185.139.70.154:7777):${reset}" IP_SERVER
-		read -p "${YELLOW}ѕроверьте правильность данных! ${white}ѕродолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
+		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
 			apt-get update > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
@@ -2756,7 +2756,7 @@ site_energy()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -2837,7 +2837,7 @@ site_empire()
 		read -p "${white}Укажите ваш домен(пример: virginia-rp.ru ; logs.virginia-rp.ru):${reset}" DOMAIN
 		read -p "${white}Укажите название базы данных:${reset}" DATABASE
 		read -p "${white}Укажите пароль от базы данных:${reset}" MYPASS
-		read -p "${YELLOW}ѕроверьте правильность данных! ${white}ѕродолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
+		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
 			apt-get update > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
@@ -2879,7 +2879,7 @@ site_empire()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -2920,12 +2920,12 @@ site_empire()
 				tput sgr0
 				exit
 			fi
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_admin" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_category_roulette" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_drop_roulette" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_item_roulette" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_news" > /dev/null 2>&1
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_settings" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_admin" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_category_roulette" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_drop_roulette" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_item_roulette" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_news" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE ucp_settings" > /dev/null 2>&1
 			mysql -u admin -p$MYPASS $DATABASE < /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Установка базы ${white}• ${green}[OK]"
@@ -2985,7 +2985,7 @@ site_arizona()
 		read -p "${white}Укажите ваш домен(пример: virginia-rp.ru ; logs.virginia-rp.ru):${reset}" DOMAIN
 		read -p "${white}Укажите название базы данных:${reset}" DATABASE
 		read -p "${white}Укажите пароль от базы данных:${reset}" MYPASS
-		read -p "${YELLOW}ѕроверьте правильность данных! ${white}ѕродолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
+		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
 			apt-get update > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
@@ -3027,7 +3027,7 @@ site_arizona()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -3068,8 +3068,8 @@ site_arizona()
 				tput sgr0
 				exit
 			fi
-			mysql -u gs1 -p$MYPASS -D $DATABASE -e "DROP TABLE site_news"  > /dev/null 2>&1
-			mysql -u gs1 -p$MYPASS $DATABASE < /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE site_news"  > /dev/null 2>&1
+			mysql -u admin -p$MYPASS $DATABASE < /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Установка базы ${white}• ${green}[OK]"
 				tput sgr0
@@ -3127,7 +3127,7 @@ site_virginia()
 		read -p "${white}Укажите ваш домен(пример: virginia-rp.ru ; logs.virginia-rp.ru):${reset}" DOMAIN
 		read -p "${white}Укажите название базы данных:${reset}" DATABASE
 		read -p "${white}Укажите пароль от базы данных:${reset}" MYPASS
-		read -p "${YELLOW}ѕроверьте правильность данных! ${white}продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
+		read -p "${YELLOW}Проверьте правильность данных! ${white}Продолжить установку ${white}(${green}y${white}/${red}n${white})?:${reset}" CONT
 		if [ "$CONT" = "y" ] || [ "$CONT" = "Y" ] || [ "$CONT" = "yes" ] || [ "$CONT" = "Yes" ]; then
 			apt-get update > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
@@ -3177,7 +3177,7 @@ site_virginia()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -3218,7 +3218,7 @@ site_virginia()
 				tput sgr0
 				exit
 			fi
-			mysql -uadmin -p$MYPASS -D $DATABASE -e "DROP TABLE site_news"  > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D $DATABASE -e "DROP TABLE site_news"  > /dev/null 2>&1
 			mysql -u admin -p$MYPASS $DATABASE < /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Установка базы ${white}• ${green}[OK]"
@@ -3378,7 +3378,7 @@ server_radmir()
 			tput sgr0
 			exit
 		fi
-		mysql -uadmin -p$MYPASS -D radmir -e "DROP DATABASE radmir" > /dev/null 2>&1
+		mysql -u admin -p$MYPASS -D radmir -e "DROP DATABASE radmir" > /dev/null 2>&1
 		mkdir /var/lib/mysql/radmir > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
 			echo "• Создание базы  ${white}• ${green}[OK]"
@@ -3539,7 +3539,7 @@ server_virginia()
 				tput sgr0
 				exit
 			fi
-			mysql -uadmin -p$MYPASS -D virginia -e "DROP DATABASE virginia" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D virginia -e "DROP DATABASE virginia" > /dev/null 2>&1
 			mkdir /var/lib/mysql/virginia > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Создание базы  ${white}• ${green}[OK]"
@@ -3681,7 +3681,7 @@ server_absolute()
 				tput sgr0
 				exit
 			fi
-			mysql -uadmin -p$MYPASS -D absolute -e "DROP DATABASE absolute" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D absolute -e "DROP DATABASE absolute" > /dev/null 2>&1
 			mkdir /var/lib/mysql/absolute > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Создание базы  ${white}• ${green}[OK]"
@@ -3823,7 +3823,7 @@ server_florence()
 				tput sgr0
 				exit
 			fi
-			mysql -uadmin -p$MYPASS -D arizona -e "DROP DATABASE arizona" > /dev/null 2>&1
+			mysql -u admin -p$MYPASS -D arizona -e "DROP DATABASE arizona" > /dev/null 2>&1
 			mkdir /var/lib/mysql/arizona > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Создание базы  ${white}• ${green}[OK]"
@@ -3932,7 +3932,7 @@ websistem()
 		tput sgr0
 		exit
 	fi
-	if [ $VER = "Debian9" ]; then
+	if [ $VER = "Debian11" ]; then
 		if [ "$WEBSISTEMS" = "1" ]; then
 			systemctl stop nginx > /dev/null 2>&1
 			apt-get install -y apache2 > /dev/null 2>&1
@@ -4031,7 +4031,7 @@ websistem()
 phpversion()
 {
 	Info "${YELLOW}Мастер настройки PHP"
-	read -p "${white}Какую версию PHP?( 1 - v5.6 | 2 - v7.0 )[1]:${reset}" PHPVERSIONS
+	read -p "${white}Какую версию PHP?( 1 - v5.6 | 2 - v7.4 )[1]:${reset}" PHPVERSIONS
 	PHPVERSIONS="${PHPVERSIONS:-1}"
 	apt-get update > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
@@ -4071,7 +4071,7 @@ phpversion()
 			tput sgr0
 			exit
 		fi
-		a2dismod php7.0 > /dev/null 2>&1
+		a2dismod php7.4 > /dev/null 2>&1
 		a2enmod php5.6 > /dev/null 2>&1
 		sudo update-alternatives --set php /usr/bin/php5.6 > /dev/null 2>&1
 		sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/5.6/apache2/php.ini > /dev/null 2>&1
@@ -4088,27 +4088,27 @@ phpversion()
 		fi
 	fi
 	if [ "$PHPVERSIONS" = "2" ]; then
-		apt-get install -y php7.0 php7.0-gd php7.0-mysql  > /dev/null 2>&1
+		apt-get install -y php7.4 php7.4-gd php7.4-mysql  > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
-			echo "• Установка пакетов ${green}php7.0 ${white}• ${green}[OK]"
+			echo "• Установка пакетов ${green}php7.4 ${white}• ${green}[OK]"
 			tput sgr0
 		else
-			echo "• Установка пакетов ${green}php7.0 ${white}• ${red}[fail]"
+			echo "• Установка пакетов ${green}php7.4 ${white}• ${red}[fail]"
 			tput sgr0
 			exit
 		fi
-		a2enmod php7.0 > /dev/null 2>&1
+		a2enmod php7.4 > /dev/null 2>&1
 		a2dismod php5.6 > /dev/null 2>&1
-		sudo update-alternatives --set php /usr/bin/php7.0 > /dev/null 2>&1
-		sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
-		sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
-		sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
+		sudo update-alternatives --set php /usr/bin/php7.4 > /dev/null 2>&1
+		sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
+		sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
+		sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
 		systemctl restart apache2 > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
-			echo "• Настройка ${green}php7.0 ${white}• ${green}[OK]"
+			echo "• Настройка ${green}php7.4 ${white}• ${green}[OK]"
 			tput sgr0
 		else
-			echo "• Настройка ${green}php7.0 ${white}• ${red}[fail]"
+			echo "• Настройка ${green}php7.4 ${white}• ${red}[fail]"
 			tput sgr0
 			exit
 		fi
@@ -4138,7 +4138,7 @@ mysqlmenu()
 	MYPASS=$(pwgen -cns -1 16) > /dev/null 2>&1
 	mysql -e "GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY '$MYPASS' WITH GRANT OPTION" > /dev/null 2>&1
 	mysql -e "FLUSH PRIVILEGES" > /dev/null 2>&1
-	mysql -uadmin -p$MYPASS -e "SET GLOBAL sql_mode=''" > /dev/null 2>&1
+	mysql -u admin -p$MYPASS -e "SET GLOBAL sql_mode=''" > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		echo "${white}• Установка пакетов ${green}mariadb-server ${white}• ${green}[OK]"
 		tput sgr0
@@ -4193,19 +4193,30 @@ mysqlmenu()
 }
 webserverall()
 {
-if [ $VER = "Debian9" ]; then
+if [ $VER = "Debian11" ]; then
 	I=`dpkg -s apache2 | grep "Status" ` > /dev/null 2>&1
 	if [ -n "$I" ] 
 	then
 	   webservermenu
 	else
 		Info "${YELLOW}Мастер настройки Web Servera"
-		echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
-		echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
-		echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
-		echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
-		echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+		#-----------------------------------------------------------------------
+		# Debian 9
+		# echo "deb http://deb.debian.org/debian stretch main" > /etc/apt/sources.list
+		# echo "deb-src http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
+		# echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
+		# echo "deb-src http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list
+		# echo "deb http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+		# echo "deb-src http://deb.debian.org/debian stretch-updates main" >> /etc/apt/sources.list
+		#-----------------------------------------------------------------------
+		# Debian 11
+		echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian bullseye main contrib non-free" >> /etc/apt/sources.list
+		echo "deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list
+		echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+		echo "deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+		#-----------------------------------------------------------------------
 		if [ $? -eq 0 ]; then
 			echo "${white}• Добавление ${green}репозиторий ${white}• ${green}[OK]"
 			tput sgr0
@@ -4223,15 +4234,15 @@ if [ $VER = "Debian9" ]; then
 			tput sgr0
 			exit
 		fi
-		apt install -y pwgen apache2 php7.0 php7.0-gd php7.0-mysql mariadb-server unzip > /dev/null 2>&1
+		apt install -y pwgen apache2 php7.4 php7.4-gd php7.4-mysql mariadb-server unzip > /dev/null 2>&1
 		MYPASS=$(pwgen -cns -1 16) > /dev/null 2>&1
 		mysql -e "GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY '$MYPASS' WITH GRANT OPTION" > /dev/null 2>&1
 		mysql -e "FLUSH PRIVILEGES" > /dev/null 2>&1
 		if [ $? -eq 0 ]; then
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,mariadb-server ${white}• ${green}[OK]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,mariadb-server ${white}• ${green}[OK]"
 			tput sgr0
 		else
-			echo "${white}• Установка пакетов ${green}apache2,php7.0,mariadb-server ${white}• ${red}[fail]"
+			echo "${white}• Установка пакетов ${green}apache2,php7.4,mariadb-server ${white}• ${red}[fail]"
 			tput sgr0
 			exit
 		fi
@@ -4252,9 +4263,9 @@ if [ $VER = "Debian9" ]; then
 		fi
 		a2enmod rewrite > /dev/null 2>&1
 		echo "Europe/Moscow" > /etc/timezone > /dev/null 2>&1
-		sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
-		sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
-		sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
+		sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
+		sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
+		sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
 		sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf > /dev/null 2>&1
 		sed -i 's/#max_connections        = 100/max_connections        = 1000/g' /etc/mysql/mariadb.conf.d/50-server.cnf > /dev/null 2>&1
 		systemctl restart apache2 > /dev/null 2>&1
@@ -4532,7 +4543,7 @@ site_unionlogs()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -4676,25 +4687,25 @@ site_iodarkforum()
 				tput sgr0
 			fi
 			chown -R mysql:mysql /var/lib/mysql/forum
-			mysql -u admin -p$MYPASS forum < /var/www/${DOMAIN}/forum.sql > /dev/null 2>&1
+			mysql -u admin -p$MYPASS forum < /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
-				echo "• Установка ${green}forum.sql! ${white}• ${green}[OK]"
+				echo "• Установка ${green}base.sql! ${white}• ${green}[OK]"
 				tput sgr0
 			else
-				echo "• Установка ${green}forum.sql! ${white}• ${red}[fail]"
+				echo "• Установка ${green}base.sql! ${white}• ${red}[fail]"
 				tput sgr0
 				exit
 			fi
-			rm /var/www/${DOMAIN}/forum.sql > /dev/null 2>&1
+			rm /var/www/${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
-				echo "• Удаление ${green}forum.sql! ${white}• ${green}[OK]"
+				echo "• Удаление ${green}base.sql! ${white}• ${green}[OK]"
 				tput sgr0
 			else
-				echo "• Удаление ${green}forum.sql! ${white}• ${red}[fail]"
+				echo "• Удаление ${green}base.sql! ${white}• ${red}[fail]"
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -4802,15 +4813,15 @@ virginiaproject()
 				tput sgr0
 				exit
 			fi
-			apt install -y pwgen apache2 php7.0 php7.0-gd php7.0-mysql mariadb-server unzip > /dev/null 2>&1
+			apt install -y pwgen apache2 php7.4 php7.4-gd php7.4-mysql mariadb-server unzip > /dev/null 2>&1
 			MYPASS=$(pwgen -cns -1 16) > /dev/null 2>&1
 			mysql -e "GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY '$MYPASS' WITH GRANT OPTION" > /dev/null 2>&1
 			mysql -e "FLUSH PRIVILEGES" > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
-				echo "${white}• Установка пакетов ${green}apache2,php7.0,mariadb-server ${white}• ${green}[OK]"
+				echo "${white}• Установка пакетов ${green}apache2,php7.4,mariadb-server ${white}• ${green}[OK]"
 				tput sgr0
 			else
-				echo "${white}• Установка пакетов ${green}apache2,php7.0,mariadb-server ${white}• ${red}[fail]"
+				echo "${white}• Установка пакетов ${green}apache2,php7.4,mariadb-server ${white}• ${red}[fail]"
 				tput sgr0
 				exit
 			fi
@@ -4830,8 +4841,8 @@ virginiaproject()
 				exit
 			fi
 			echo "Europe/Moscow" > /etc/timezone > /dev/null 2>&1
-			sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
-			sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
+			sed -i "s/upload_max_filesize = 2M/upload_max_filesize = 90M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
+			sed -i "s/post_max_size = 8M/post_max_size = 360M/g" /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
 			sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf > /dev/null 2>&1
 			sed -i 's/#max_connections        = 100/max_connections        = 1000/g' /etc/mysql/mariadb.conf.d/50-server.cnf > /dev/null 2>&1
 			systemctl restart apache2 > /dev/null 2>&1
@@ -4866,7 +4877,7 @@ virginiaproject()
 			# ССЫЛКА НА YOUTUBE - https://clck.ru/RQkG2
 			# ССЫЛКА НА ВК  - https://clck.ru/RQkJi
 			fi
-			sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.0/apache2/php.ini > /dev/null 2>&1
+			sed -i 's/short_open_tag = Off/short_open_tag = On/g' /etc/php/7.4/apache2/php.ini > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Запуск ${green}short_open_tab! ${white}• ${green}[OK]"
 				tput sgr0
@@ -5042,7 +5053,7 @@ virginiaproject()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/${DOMAIN}/site.conf /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/${DOMAIN}/apache2 /etc/apache2/sites-available/${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -5128,7 +5139,7 @@ virginiaproject()
 				tput sgr0
 				exit
 			fi
-			mv /var/www/logs.${DOMAIN}/site.conf /etc/apache2/sites-available/logs.${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/logs.${DOMAIN}/apache2 /etc/apache2/sites-available/logs.${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -5215,25 +5226,25 @@ virginiaproject()
 				tput sgr0
 			fi
 			chown -R mysql:mysql /var/lib/mysql/forum
-			mysql -u admin -p$MYPASS forum < /var/www/forum.${DOMAIN}/forum.sql > /dev/null 2>&1
+			mysql -u admin -p$MYPASS forum < /var/www/forum.${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
-				echo "• Установка ${green}forum.sql! ${white}• ${green}[OK]"
+				echo "• Установка ${green}base.sql! ${white}• ${green}[OK]"
 				tput sgr0
 			else
-				echo "• Установка ${green}forum.sql! ${white}• ${red}[fail]"
+				echo "• Установка ${green}base.sql! ${white}• ${red}[fail]"
 				tput sgr0
 				exit
 			fi
-			rm /var/www/forum.${DOMAIN}/forum.sql > /dev/null 2>&1
+			rm /var/www/forum.${DOMAIN}/base.sql > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
-				echo "• Удаление ${green}forum.sql! ${white}• ${green}[OK]"
+				echo "• Удаление ${green}base.sql! ${white}• ${green}[OK]"
 				tput sgr0
 			else
-				echo "• Удаление ${green}forum.sql! ${white}• ${red}[fail]"
+				echo "• Удаление ${green}base.sql! ${white}• ${red}[fail]"
 				tput sgr0
 				exit
 			fi
-			mv /var/www/forum.${DOMAIN}/site.conf /etc/apache2/sites-available/forum.${DOMAIN}.conf > /dev/null 2>&1
+			mv /var/www/forum.${DOMAIN}/apache2 /etc/apache2/sites-available/forum.${DOMAIN}.conf > /dev/null 2>&1
 			if [ $? -eq 0 ]; then
 				echo "• Загрузка параметров для ${green}Apache2! ${white}• ${green}[OK]"
 				tput sgr0
@@ -5359,7 +5370,7 @@ gameserver()
 }
 menu()
 {
-if [ $VER = "Debian9" ]; then
+if [ $VER = "Debian11" ]; then
 	if [ "$Debian_9" = "1" ]; then
 		I=`dpkg -s apache2 | grep "Status" ` > /dev/null 2>&1
 		if [ -n "$I" ] 
@@ -5477,7 +5488,7 @@ else
 	Info
 fi
 }
-if [ $VER = "Debian9" ] || [ $VER = "Debian8" ]; then
+if [ $VER = "Debian11" ] || [ $VER = "Debian8" ]; then
 	I=`dpkg -s sudo | grep "Status" ` > /dev/null 2>&1
 	if [ -n "$I" ] 
 	then
