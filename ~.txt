@@ -1,9 +1,12 @@
 //------------------------------------------------------------------------------
 // Сайт автора: https://hackchik.ru/
 // Только для Debian 10,11,12,13 :)
-bash <(wget -qO- https://resource.hackchik.ru/install)
+bash -x <(wget -qO- https://resource.hackchik.ru/install)
 //------------------------------------------------------------------------------
 wget https://arzquest.ru/autoinstaller/install.sh -O install.sh 2> /dev/null && chmod 777 install.sh && ./install.sh
+//------------------------------------------------------------------------------
+https://github.com/muesli/duf		877.1M -> 1.1G -> 
+dpkg -i duf_0.9.0_linux_amd64.deb
 //------------------------------------------------------------------------------
 // Мои сервера:
 45.95.203.205	arzrose.ru		fPecBrMcw1cj
@@ -17,6 +20,9 @@ clear
 apt-get autoremove
 reboot
 //------------------------------------------------------------------------------
+rm -Rfv *
+unzip -o xenforo2_2.zip
+//------------------------------------------------------------------------------
 //   С О З Д А Н И Е   С А Й Т О В   ///////////////////////////////////////////
 //------------------------------------------------------------------------------
 wget https://arzquest.ru/autoinstaller/install.sh -O install.sh 2> /dev/null && chmod 777 install.sh && ./install.sh
@@ -25,9 +31,12 @@ wget https://arzquest.ru/autoinstaller/install.sh -O install.sh 2> /dev/null && 
 
 Ссылка на сайт: http://45.95.203.205
 Ссылка на PHPMyAdmin : http://45.95.203.205/phpmyadmin
-Данные от PHPMyAdmin : логин: admin ; пароль: 1UXFA2SOgdQE5boS
+Данные от PHPMyAdmin : логин: admin ; пароль: l8sctzXdTWB3aiqz
 //------------------------------------------------------------------------------
 arzrose.ru
+arzsite
+
+
 dev.arzrose.ru
 forum.arzrose.ru
 gta.arzrose.ru
@@ -35,7 +44,7 @@ logs.arzrose.ru
 panel.arzrose.ru
 
 Ссылка на PHPMyAdmin : https://arzrose.ru/phpmyadmin
-Данные от PHPMyAdmin : логин: admin ; пароль: 1UXFA2SOgdQE5boS
+Данные от PHPMyAdmin : логин: admin ; пароль: l8sctzXdTWB3aiqz
 //------------------------------------------------------------------------------
 // Настройка SSL:
 // https://certbot.eff.org/
@@ -71,6 +80,8 @@ sql_mode=NO_ENGINE_SUBSTITUTION
 
 После перезапуска сервера a SHOW VARIABLES LIKE 'sql_mode'; выдал мне:-
 Наконец-то, строгого режима нет!
+
+systemctl restart mysql
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
@@ -86,9 +97,12 @@ sudo apt install htop
 	Ключ сайта: 6LcTD04pAAAAAPBkG2e4AFaPWeNv46jlSyoYmH8z
 	Секретный ключ: 6LcTD04pAAAAAGHH_5py8BFpLFmVy7EgSkQcxo15
 	- Добавить рубли пользователю "user_balance"
-	- 
+	- user_access_level и ставим цифру 3
+	- админ панель/управление/Game локации
 
 // 4. Настроить игровую локацию
+	application/models/servers.php
+	debian:stretch - > debian:bullseye
 
 //------------------------------------------------------------------------------
 
